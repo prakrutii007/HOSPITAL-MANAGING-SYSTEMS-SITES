@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cancel Appointment</h1>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Doctor</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>2023-10-15</td>
+            <td>10:00 AM</td>
+            <td>Dr. Smith</td>
+            <td>
+                <button onclick="confirmCancellation()">Cancel</button>
+            </td>
+        </tr>
+        <!-- More appointments can be added here -->
+    </table>
+    <script>
+        function confirmCancellation() {
+            if (confirm("Are you sure you want to cancel this appointment?")) {
+                alert("Appointment cancelled.");
+            }
+        }
+    </script>
+</body>
+</html>
